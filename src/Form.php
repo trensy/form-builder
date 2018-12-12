@@ -85,6 +85,9 @@ class Form
     protected $script = [
         'jq' => '<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>',
         'vue' => '<script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>',
+        //layer
+        'layer'=>'<script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>',
+        'layer-css' => '<link href="https://cdn.bootcss.com/layer/2.3/skin/layer.css" rel="stylesheet">',
         //iview 版本 2.14.3
         'iview-css' => '<link href="https://cdn.jsdelivr.net/npm/iview@2.14.3/dist/styles/iview.css" rel="stylesheet">',
         'iview' => '<script src="https://cdn.jsdelivr.net/npm/iview@2.14.3/dist/iview.min.js"></script>',
@@ -152,7 +155,7 @@ class Form
     protected $config = [
         'form' => [
             'inline' => false,
-            'labelPosition' => 'right',
+            'labelPosition' => 'left',
             'labelWidth' => 125,
             'showMessage' => true,
             'autocomplete' => 'off'
@@ -464,7 +467,9 @@ class Form
     {
         $_script = $this->script;
         $script = [
-            $_script['form-create']
+            $_script['form-create'],
+            $_script['layer'],
+            $_script['layer-css'],
         ];
         if ($this->loadCityAreaData == true)
             $script[] = $_script['city-area-data'];

@@ -11,29 +11,68 @@
         return rule;
     }, vm = new Vue,name = 'Trensy\FormBuilderExec<?= !$form->getId() ? '' : '_'.$form->getId() ?>';
 
+
+    function show(msgType, msg){
+        var icontype = 4;
+        switch(msgType){
+            case "tinfo":icontype=4;break;
+            case "tsuccess":icontype=1;break;
+            case "terror":icontype=2;break;
+            case "twarning":icontype=7;break;
+            default :icontype = 4;
+        }
+        layer.msg(msg, {
+            time: 250000, //2s后自动关闭
+            icon: icontype,
+            offset: '100px', //右下角弹出
+        });
+    }
+
+    function showResponse(responseText)  {
+        if(typeof  responseText == 'string') var responseText = $.parseJSON(responseText);
+        if((!$.isEmptyObject(responseText.result)) && (!$.isPlainObject(responseText.result))){
+        if(responseText.message.msg){
+            show(responseText.message.msgType, responseText.message.msg);
+        }
+        setTimeout(function(){
+            location.assign(responseText.result);
+        }, 1000);
+        }else{
+            if(responseText.message.msg){
+                show(responseText.message.msgType, responseText.message.msg);
+            }
+        }
+        return false;
+    }
+
     window[name] =  function create(el, callback) {
         if (!el) el = document.body;
         var $f = formCreate.create(getRule(), {
             el: el,
             form:<?=json_encode($form->getConfig('form'))?>,
             row:<?=json_encode($form->getConfig('row'))?>,
-			submitBtn:<?=$form->isSubmitBtn() ? '{}' : 'false'?>,
+			submitBtn:<?=$form->isSubmitBtn() ? '{size:"default", long:false}' : 'false'?>,
 			resetBtn:<?=$form->isResetBtn() ? 'true' : '{}'?>,
             upload: {
                 onExceededSize: function (file) {
-                    vm.$Message.error(file.name + '超出指定大小限制');
+                        show('terror', file.name + '超出指定大小限制');
+                 //   vm.$Message.error(file.name + '超出指定大小限制');
                 },
                 onFormatError: function () {
-                    vm.$Message.error(file.name + '格式验证失败');
+                        show('terror', file.name + '格式验证失败');
+                 //   vm.$Message.error(file.name + '格式验证失败');
                 },
                 onError: function (error) {
-                    vm.$Message.error(file.name + '上传失败,(' + error + ')');
+                        show('terror', file.name + '上传失败,(' + error + ')');
+                  //  vm.$Message.error(file.name + '上传失败,(' + error + ')');
                 },
                 onSuccess: function (res) {
-                    if (res.code == 200) {
-                        return res.data.filePath;
+                    if(typeof  res == 'string') var res = $.parseJSON(res);
+                    if (res.statusCode == 200) {
+                        return res.result.filePath;
                     } else {
-                        vm.$Message.error(res.msg);
+                       // vm.$Message.error(res.message.msg);
+                        show(res.message.msgType, res.message.msg);
                     }
                 }
             },
@@ -46,20 +85,24 @@
                     dataType: 'json',
                     data: formData,
                     success: function (res) {
-                        if (res.code == 200) {
-                            vm.$Message.success(res.msg);
+                        if(typeof  res == 'string') var res = $.parseJSON(res);
+                        if (res.statusCode == 200) {
+                           // vm.$Message.success(res.message.msg);
+                            showResponse(res);
                             formCreate.formSuccess && formCreate.formSuccess(res, $f, formData);
                             callback && callback(0, res, $f, formData);
                             //TODO 表单提交成功!
                         } else {
-                            vm.$Message.error(res.msg);
+                            //vm.$Message.error(res.message.msg);
+                            show(res.message.msgType, res.message.msg);
                             $f.btn.finish();
                             callback && callback(1, res, $f, formData);
                             //TODO 表单提交失败
                         }
                     },
                     error: function () {
-                        vm.$Message.error('表单提交失败');
+                        show('terror', '表单提交失败');
+                       // vm.$Message.error('表单提交失败');
                         $f.btn.finish();
                     }
                 });
