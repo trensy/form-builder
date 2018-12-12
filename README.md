@@ -21,6 +21,8 @@
 PHP表单生成器，快速生成现代化的form表单。包含复选框、单选框、输入框、下拉选择框等元素以及省市区三级联动、时间选择、日期选择、颜色选择、树型、文件/图片上传等功能。
 </p>
 
+> forked xaboy/form-builder 以支持PHP trensy/framework 
+
 > 1.2.4 版本支持简单字段验证 
 
 #### 如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！
@@ -28,17 +30,8 @@ PHP表单生成器，快速生成现代化的form表单。包含复选框、单�
 #### 本项目还在不断开发完善中,如有建议或问题请[在这里提出](https://github.com/xaboy/form-builder/issues/new)
 
 ## 安装
-`composer require xaboy/form-builder`
+`composer require trensy/form-builder`
 
-## 示例
-
-![https://raw.githubusercontent.com/xaboy/form-create/master/images/sample110.jpg](https://raw.githubusercontent.com/xaboy/form-create/master/images/sample110.jpg)
-
-## 演示地址
-演示站后台:[ crmeb_v2.5 ]
-http://demo25.crmeb.net 账号：demo 密码：crmeb.com
-
-### 例子 (TP框架)
 
 #### 版本1 编辑权限
 ```php
@@ -65,9 +58,6 @@ $this->assign(compact('form'));
 return $this->fetch('public/form-builder');
 
 ```
-#### 效果
-![https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo02.jpg](https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo02.jpg)
-
 #### 版本2 添加产品
 ```php
 $field = [
@@ -106,10 +96,6 @@ $this->assign(compact('form'));
 return $this->fetch('public/form-builder');
 
 ```
-#### 效果
-![https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo03.jpg](https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo03.jpg)
-
-
 #### 版本3 编辑产品
 ```php
 $product = ProductModel::get($id);
@@ -147,9 +133,6 @@ $form->setMethod('post')->setTitle('编辑产品');
 $this->assign(compact('form'));
 return $this->fetch('public/form-builder');
 ```
-#### 效果
-![https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo04.jpg](https://raw.githubusercontent.com/xaboy/form-builder/master/images/demo04.jpg)
-
 
 **当form提交成功后会调用`window.formCreate.formSuccess(res,$f,formData)`作为回调方法**
 
@@ -538,11 +521,8 @@ echo $html;
  * @method $this children(array $children) 批量设置子集
  * @method $this child(TreeData $child) 设置子集
 ```
-
-## 所有组件生成效果
-![https://raw.githubusercontent.com/xaboy/form-builder/master/images/components.png](https://raw.githubusercontent.com/xaboy/form-builder/master/images/components.png)
-
 ## 参考
 
 * **ui框架:** [iview2.x](http://v2.iviewui.com/docs/guide/install)
 * **js表单生成器生成:** [form-create](https://github.com/xaboy/form-create)
+* **forked xaboy/form-builder** [xaboy/form-builder](https://github.com/xaboy/form-builder)
