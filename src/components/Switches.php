@@ -1,18 +1,18 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
-use FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\FormComponentDriver;
 
 /**
  * 开关组件
  * Class Switches
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this size(String $size) 开关的尺寸，可选值为large、small、default或者不写。建议开关如果使用了2个汉字的文字，使用 large。
  * @method $this disabled(Boolean $bool) 禁用开关, 默认为false
  * @method $this trueValue(String $value) 选中时的值，默认为1

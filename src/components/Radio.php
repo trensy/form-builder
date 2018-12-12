@@ -1,21 +1,21 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
-use FormBuilder\traits\component\ComponentOptionsTrait;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
+use Trensy\FormBuilder\traits\component\ComponentOptionsTrait;
 
 /**
  * 单选框组件
  * Class Radio
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this size(String $size) 单选框的尺寸，可选值为 large、small、default 或者不设置
  * @method $this vertical(Boolean $bool) 是否垂直排列，按钮样式下无效
  */

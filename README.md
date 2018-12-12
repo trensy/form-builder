@@ -141,7 +141,7 @@ return $this->fetch('public/form-builder');
 ```php
 
 namespace Test;
-use FormBuilder\Form;
+use Trensy\FormBuilder\Form;
 
 //input组件
 $input = Form::input('goods_name','商品名称');
@@ -182,7 +182,7 @@ echo $html;
 
 
 ## AJAX请求返回
-`namespace \FormBuilder\Json`
+`namespace \Trensy\FormBuilder\Json`
 
 * **Json::succ(msg,data = [])** 表单提交成功
 * **Json::fail(errorMsg,data = [])** 表单提交失败
@@ -190,7 +190,7 @@ echo $html;
 * **Json::uploadFail(errorMsg)** 文件/图片上传失败
 
 ## Form 表单生成类
-`namespace \FormBuilder\Form`
+`namespace \Trensy\FormBuilder\Form`
 
 * **components(array $components = [])** 批量添加组件
 * **formRow(Row $row)** 设置表单Row规则
@@ -261,7 +261,7 @@ echo $html;
 * **validate()** 设置验证规则[规则说明](https://github.com/xaboy/form-builder/blob/master/src/components/Validate.php)
 
 ## 组件
-`namespace \FormBuilder\Form`
+`namespace \Trensy\FormBuilder\Form`
 
 ####  多级联动组件
 * **Form::cascader** 多级联动组件,value为array类型

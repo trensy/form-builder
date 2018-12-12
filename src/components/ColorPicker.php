@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 颜色选择器组件
  * Class ColorPicker
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this disabled(Boolean $bool) 是否禁用
  * @method $this alpha(Boolean $bool) 是否支持透明度选择, 默认为false
  * @method $this hue(Boolean $bool) 是否支持色彩选择, 默认为true

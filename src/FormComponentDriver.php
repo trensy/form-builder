@@ -1,21 +1,21 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder;
+namespace Trensy\FormBuilder;
 
-use FormBuilder\components\Col;
-use FormBuilder\components\Validate;
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\traits\component\CallPropsTrait;
+use Trensy\FormBuilder\components\Col;
+use Trensy\FormBuilder\components\Validate;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\traits\component\CallPropsTrait;
 
 /**
  * Class FormComponentDriver
  *
- * @package FormBuilder
+ * @package Trensy\FormBuilder
  */
 abstract class FormComponentDriver implements FormComponentInterFace
 {

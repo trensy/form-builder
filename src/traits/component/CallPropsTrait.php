@@ -1,18 +1,18 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\traits\component;
+namespace Trensy\FormBuilder\traits\component;
 
 
-use FormBuilder\Helper;
+use Trensy\FormBuilder\Helper;
 
 /**
  * Class CallPropsTrait
- * @package FormBuilder\traits\component
+ * @package Trensy\FormBuilder\traits\component
  */
 trait CallPropsTrait
 {

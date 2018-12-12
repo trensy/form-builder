@@ -1,21 +1,21 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
-use FormBuilder\traits\component\ComponentOptionsTrait;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
+use Trensy\FormBuilder\traits\component\ComponentOptionsTrait;
 
 /**
  * 复选框组件
  * Class Checkbox
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this size(String $size) 多选框组的尺寸，可选值为 large、small、default 或者不设置
  */
 class Checkbox extends FormComponentDriver

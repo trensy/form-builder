@@ -1,21 +1,21 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
-use FormBuilder\traits\component\ComponentOptionsTrait;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
+use Trensy\FormBuilder\traits\component\ComponentOptionsTrait;
 
 /**
  * 选择器组件
  * Class Select
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this multiple(Boolean $bool) 是否支持多选, 默认为false
  * @method $this disabled(Boolean $bool) 是否禁用, 默认为false
  * @method $this clearable(Boolean $bool) 是否可以清空选项，只在单选时有效, 默认为false

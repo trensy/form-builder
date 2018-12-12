@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 滑块组件
  * Class Slider
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this min(float $min) 最小值, 默认 0
  * @method $this max(float $max) 最大值, 默认 100
  * @method $this step(float $step) 步长，取值建议能被（max - min）整除, 默认 1

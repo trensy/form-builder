@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 框架组件
  * Class Frame
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this type(String $type) frame类型, 有input, file, image, 默认为input
  * @method $this src(String $src) iframe地址
  * @method $this maxLength(int $length) value的最大数量, 默认无限制

@@ -1,19 +1,19 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\Helper;
 
 /**
  * Class Option
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  */
 class Option implements FormComponentInterFace
 {

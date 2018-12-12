@@ -1,19 +1,19 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\traits\component\CallPropsTrait;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\traits\component\CallPropsTrait;
 
 /**
  * Class TreeData
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this id(String $id) Id,必须唯一
  * @method $this title(String $title) 标题
  * @method $this expand(Boolean $bool) 是否展开直子节点,默认为false

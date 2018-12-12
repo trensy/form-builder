@@ -1,39 +1,39 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder;
+namespace Trensy\FormBuilder;
 
-use FormBuilder\components\Cascader;
-use FormBuilder\components\FormStyle;
-use FormBuilder\components\Hidden;
-use FormBuilder\components\Row;
-use FormBuilder\traits\form\FormCascaderTrait;
-use FormBuilder\traits\form\FormCheckBoxTrait;
-use FormBuilder\traits\form\FormColorPickerTrait;
-use FormBuilder\traits\form\FormDatePickerTrait;
-use FormBuilder\traits\form\FormFrameTrait;
-use FormBuilder\traits\form\FormHiddenTrait;
-use FormBuilder\traits\form\FormInputNumberTrait;
-use FormBuilder\traits\form\FormInputTrait;
-use FormBuilder\traits\form\FormRadioTrait;
-use FormBuilder\traits\form\FormRateTrait;
-use FormBuilder\traits\form\FormSelectTrait;
-use FormBuilder\traits\form\FormSliderTrait;
-use FormBuilder\traits\form\FormStyleTrait;
-use FormBuilder\traits\form\FormSwitchesTrait;
-use FormBuilder\traits\form\FormTimePickerTrait;
-use FormBuilder\traits\form\FormTreeTrait;
-use FormBuilder\traits\form\FormUploadTrait;
-use FormBuilder\traits\form\FormOptionTrait;
-use FormBuilder\traits\form\FormValidateTrait;
+use Trensy\FormBuilder\components\Cascader;
+use Trensy\FormBuilder\components\FormStyle;
+use Trensy\FormBuilder\components\Hidden;
+use Trensy\FormBuilder\components\Row;
+use Trensy\FormBuilder\traits\form\FormCascaderTrait;
+use Trensy\FormBuilder\traits\form\FormCheckBoxTrait;
+use Trensy\FormBuilder\traits\form\FormColorPickerTrait;
+use Trensy\FormBuilder\traits\form\FormDatePickerTrait;
+use Trensy\FormBuilder\traits\form\FormFrameTrait;
+use Trensy\FormBuilder\traits\form\FormHiddenTrait;
+use Trensy\FormBuilder\traits\form\FormInputNumberTrait;
+use Trensy\FormBuilder\traits\form\FormInputTrait;
+use Trensy\FormBuilder\traits\form\FormRadioTrait;
+use Trensy\FormBuilder\traits\form\FormRateTrait;
+use Trensy\FormBuilder\traits\form\FormSelectTrait;
+use Trensy\FormBuilder\traits\form\FormSliderTrait;
+use Trensy\FormBuilder\traits\form\FormStyleTrait;
+use Trensy\FormBuilder\traits\form\FormSwitchesTrait;
+use Trensy\FormBuilder\traits\form\FormTimePickerTrait;
+use Trensy\FormBuilder\traits\form\FormTreeTrait;
+use Trensy\FormBuilder\traits\form\FormUploadTrait;
+use Trensy\FormBuilder\traits\form\FormOptionTrait;
+use Trensy\FormBuilder\traits\form\FormValidateTrait;
 
 /**
  * Class Form
- * @package FormBuilder
+ * @package Trensy\FormBuilder
  */
 class Form
 {
@@ -121,7 +121,7 @@ class Form
      * 网页标题
      * @var string
      */
-    protected $title = 'formBuilder';
+    protected $title = 'Trensy\FormBuilder';
 
     /**
      * 提交地址

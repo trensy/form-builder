@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 多级联动组件
  * Class Cascader
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this type(String $type) 数据类型, 支持 city_area(省市区三级联动), city (省市二级联动), other (自定义)
  * @method $this disabled(Boolean $bool) 是否禁用选择器
  * @method $this clearable(Boolean $bool) 是否支持清除

@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\traits\component\CallPropsTrait;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\traits\component\CallPropsTrait;
 
 /**
  * row栅格规则
  * Class Row
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this gutter(Number $gutter) 栅格间距，单位 px，左右平分
  * @method $this type(String $type) 栅格的顺序，在flex布局模式下有效
  * @method $this align(String $align) flex 布局下的垂直对齐方式，可选值为top、middle、bottom

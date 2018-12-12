@@ -1,19 +1,19 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\FormComponentDriver;
 
 /**
  * 评分组件
  * Class Rate
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this count(int $star) star 总数, 默认为 5
  * @method $this allowHalf(Boolean $bool) 是否允许半选, 默认为 false
  * @method $this disabled(Boolean $bool) 是否只读，无法进行交互, 默认为

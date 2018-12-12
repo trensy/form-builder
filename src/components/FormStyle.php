@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\traits\component\CallPropsTrait;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\traits\component\CallPropsTrait;
 
 /**
  * form表单样式
  * Class FormStyle
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this inline(Boolean $bool) 是否开启行内表单模式
  * @method $this labelPosition(String $labelPosition) 表单域标签的位置，可选值为 left、right、top
  * @method $this labelWidth(Number $labelWidth) 表单域标签的宽度，所有的 FormItem 都会继承 Form 组件的 label-width 的值

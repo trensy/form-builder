@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 日期选择器组件
  * Class DatePicker
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this type(String $type) 显示类型，可选值为 date、daterange、datetime、datetimerange、year、month
  * @method $this format(String $format) 展示的日期格式, 默认为yyyy-MM-dd HH:mm:ss
  * @method $this placement(String $placement) 日期选择器出现的位置，可选值为top, top-start, top-end, bottom, bottom-start, bottom-end, left, left-start, left-end, right, right-start, right-end, 默认为bottom-start

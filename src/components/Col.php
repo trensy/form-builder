@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\interfaces\FormComponentInterFace;
-use FormBuilder\traits\component\CallPropsTrait;
+use Trensy\FormBuilder\interfaces\FormComponentInterFace;
+use Trensy\FormBuilder\traits\component\CallPropsTrait;
 
 /**
  * col栅格规则
  * Class Col
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this span(Number $span) 栅格的占位格数，可选值为0~24的整数，为 0 时，相当于display:none
  * @method $this order(Number $order) 栅格的顺序，在flex布局模式下有效
  * @method $this offset(Number $offset) 栅格左侧的间隔格数，间隔内不可以有栅格

@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * 上传组件
  * Class Upload
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this uploadType(String $uploadType) 上传文件类型，可选值为 image（图片上传），file（文件上传）
  * @method $this action(String $action) 上传的地址
  * @method $this multiple(Boolean $bool) 是否支持多选文件

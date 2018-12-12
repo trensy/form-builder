@@ -1,20 +1,20 @@
 <?php
 /**
- * FormBuilder表单生成器
+ * Trensy\FormBuilder表单生成器
  * Author: xaboy
  * Github: https://github.com/xaboy/form-builder
  */
 
-namespace FormBuilder\components;
+namespace Trensy\FormBuilder\components;
 
 
-use FormBuilder\FormComponentDriver;
-use FormBuilder\Helper;
+use Trensy\FormBuilder\FormComponentDriver;
+use Trensy\FormBuilder\Helper;
 
 /**
  * Input组件,支持类型text、password、textarea、url、email、date
  * Class Input
- * @package FormBuilder\components
+ * @package Trensy\FormBuilder\components
  * @method $this type(String $type) 输入框类型，可选值为 text、password、textarea、url、email、date;
  * @method $this size(String $size) 输入框尺寸，可选值为large、small、default或者不设置;
  * @method $this placeholder(String $placeholder) 占位文本
